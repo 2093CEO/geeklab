@@ -1,6 +1,6 @@
 'use strict';
 
-let name = 'Роман';
+let name = 'Roman';
 const birthYear = 2008;
 
 const hello = (personName) => {

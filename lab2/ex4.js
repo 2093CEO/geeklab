@@ -7,7 +7,7 @@ const fn = () => {
   fixedObject.name = 'Yeat';
   changeableObject.name = 'Kankan';
 
-  // const нельзя переназначить.
+  // const bindings cannot be reassigned.
   changeableObject = { name: 'Roman' };
 
   console.dir(fixedObject);
