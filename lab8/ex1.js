@@ -1,0 +1,16 @@
+'use strict';
+
+const iterate = (object, callback) => {
+  for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+      callback(key, object[key], object);
+    }
+  }
+};
+
+const values = { a: 1, b: 2, c: 3 };
+
+iterate(values, (key, value) => {
+  console.log({ key, value });
+});
+
